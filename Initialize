@@ -1,0 +1,20 @@
+CREATE DATABASE slammer;
+
+USE slammer;
+
+CREATE TABLE lockedUp(
+prisonerID smallint IDENTITY(1,1) PRIMARY KEY,
+firstName varchar(50),
+lastName varchar(50),
+sentance smallint NOT NULL,
+daysRemaining smallint,
+reason varchar(255)
+);
+
+INSERT INTO lockedUP(firstName, lastName, sentance, daysRemaining, reason)
+VALUES
+('Fernando','Tatis Jr.',259,217,'PEDs'),
+('Carlos','Ramirez',38,38,'Inability to Speak'),
+('Trevor','Bauer',186,186,'Being a Douchebag'),
+('Farhan','Zaidi',38,38,'Fielding a AAAA team'),
+('Rob','Manfred',38,38,'Bad Performance');
